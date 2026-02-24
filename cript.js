@@ -13,3 +13,13 @@ console.log(d);
 const x="100";
 console.log(x);
 
+let age=15;
+if (age<=9){
+    console.log("You should not think of driving")
+}
+else if (age >9 && age<=16){
+    console.log("You may think of driving")
+}
+else{
+    console.log("You are eligible to drive")
+}

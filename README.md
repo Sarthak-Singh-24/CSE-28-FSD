@@ -1,1 +1,1 @@
-# CSE-28-FSD
+# CSE-28-FSD Semester Projects
