@@ -76,3 +76,25 @@ input{
     font-size:14px;
     line-height:1.6;
 }
+
+.emp-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    font-size:14px;
+}
+
+.emp-table th,
+.emp-table td{
+    padding:8px;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,0.3);
+}
+
+.emp-table th{
+    background:rgba(255,255,255,0.2);
+}
+
+.emp-table tr:hover{
+    background:rgba(255,255,255,0.1);
+}

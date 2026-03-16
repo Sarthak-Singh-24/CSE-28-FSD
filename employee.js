@@ -31,23 +31,35 @@ function addEmployee(){
 
 
 function displayEmployee(){
-    let output="";
-
-    if(employees.length===0){
-        output="No employees added.";
-    }
-    else{
-        employees.forEach(emp=>{
-            output+=`
-            Name: ${emp.name} |
-            ID: ${emp.empId} |
-            Salary: ${emp.salary} |
-            Department: ${emp.dept} <br>
-            `;
-        });
+    if(employees.length === 0){
+        document.getElementById("output").innerHTML = "No employees added.";
+        return;
     }
 
-    document.getElementById("output").innerHTML=output;
+    let table = `
+    <table class="emp-table">
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Salary</th>
+            <th>Department</th>
+        </tr>
+    `;
+
+    employees.forEach(emp=>{
+        table += `
+        <tr>
+            <td>${emp.name}</td>
+            <td>${emp.empId}</td>
+            <td>${emp.salary}</td>
+            <td>${emp.dept}</td>
+        </tr>
+        `;
+    });
+
+    table += "</table>";
+
+    document.getElementById("output").innerHTML = table;
 }
 
 
